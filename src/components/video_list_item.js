@@ -11,7 +11,7 @@ const VideoListItem = ({ video, onVideoSelect }) => { // The {video} pulls the d
             </div>
             <div className="media-body">
                 <div className="media=heading">
-                    {title}
+                    <h6>{title}</h6>
                 </div>
             </div>
         </ div >   

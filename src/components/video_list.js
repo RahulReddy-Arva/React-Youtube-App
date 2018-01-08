@@ -14,7 +14,7 @@ const VideoList = (props) => {
     });
 
     return (
-        <ul className="col-md-9 list-group">
+        <ul className="col-md-4 list-group">
             {videoItems}
             {console.log('In video_list page: ' + 'Video Length: ' + props.data.length)}
         </ul>

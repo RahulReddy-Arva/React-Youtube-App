@@ -11,14 +11,19 @@ class SearchBar extends Component{ //if component is not imported directly from 
     
     render() {
         return (
-            <div>
+            <div className="search-bar">
                 <input 
                 value = {this.state.term}
-                onChange={ event => this.setState({ term : event.target.value})} />
-                {console.log('In search_bar page:' + this.state.term)}
+                onChange={ event => this.onInputChange(event.target.value) } />
             </div>
         );
     } 
+
+    onInputChange(term) {
+        this.setState({term});
+        this.props.onSearchTermChange(term);
+    }
+
 }
 
 // This is used to export the component "SearchBar" to all the other pages when needed.
