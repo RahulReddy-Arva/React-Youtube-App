@@ -15,6 +15,7 @@ class SearchBar extends Component{ //if component is not imported directly from 
                 <input 
                 value = {this.state.term}
                 onChange={ event => this.setState({ term : event.target.value})} />
+                {console.log('In search_bar page:' + this.state.term)}
             </div>
         );
     } 
