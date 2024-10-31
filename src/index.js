@@ -13,7 +13,7 @@ import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
 
 // declare a variable to store API key
-const API_KEY = 'AIzaSyBgfwSCLTA3RuKPpyi7HOi6PHYCEX9dVwk';
+const API_KEY = 'API_KEY';
 
 
 
